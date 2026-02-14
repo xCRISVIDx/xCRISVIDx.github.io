@@ -2,7 +2,7 @@
 
 <div>
 
-<img align="right" width="400" alt="Shimarin" src="https://i.imgur.com/aNBi8Jf.png"/>
+<img align="right" width="400" alt="Shimarin" src=""/>
 
 <h2> / about me /</h2>
   
