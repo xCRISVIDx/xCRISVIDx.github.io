@@ -2,7 +2,7 @@
 
 <div>
 
-<img align="right" width="400" alt="Shimarin" src=""/>
+<img align="right" width="400" alt="Shimarin" src=" https://www.reddit.com/r/Dragonballsuper/comments/1gj0dlt/wtf_does_gohan_have_to_study_for_wtf_is_so/?tl=es-es#lightbox"/>
 
 <h2> / about me /</h2>
   
