@@ -71,7 +71,8 @@ Landing page con animaciones y diseño minimalista.
 ## 📫 Contacto
 
 - 📧 **Email:** crisvid00@gmail.com  
-- 💻 **GitHub:** https://github.com/xCRISVIDx  
+- 💻 **GitHub:** https://github.com/xCRISVIDx
+- 💻 **Page** https://xcrisvidx.github.io
 
 ---
 
