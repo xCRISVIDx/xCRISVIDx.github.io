@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #e0e0e0;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+              url('images/hero.jpg') center/cover;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #ff1e1e;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b30000;
+}
+
+section {
+  padding: 60px 20px;
+  background: #141414;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-left: 4px solid #ff1e1e;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+img {
+  max-width: 100%;
+}
