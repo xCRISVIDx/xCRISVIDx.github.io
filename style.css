@@ -55,7 +55,7 @@ header {
 
 .hero {
   height: 100vh;
-  background: url("assets/Gohan_Estudiando.gif") center/cover no-repeat;
+  background: url("../img/Gohan_Estudiando.gif") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,6 +203,7 @@ footer {
   }
 }
 
+/* ABOUT SECTION MEJORADO */
 
 .about-section {
   background: linear-gradient(to bottom, #0d0d0d, #111);
