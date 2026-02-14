@@ -1,58 +1,204 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: #e0e0e0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
 }
+
+body {
+  background-color: #0d0d0d;
+  color: white;
+}
+
+/* NAVBAR */
 
 header {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-              url('images/hero.jpg') center/cover;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
 }
 
-h1 {
-  font-size: 3rem;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  align-items: center;
+}
+
+.logo {
+  color: #ff003c;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff003c;
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  background: url("assets/Gohan_Estudiando.gif") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(255,0,60,0.2));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #ff003c;
+  text-shadow: 0 0 20px #ff003c80;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #ccc;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  background: #ff1e1e;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #ff003c;
   color: white;
   text-decoration: none;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #b30000;
+  background: #ff335c;
+  box-shadow: 0 0 20px #ff003c;
 }
 
-section {
-  padding: 60px 20px;
-  background: #141414;
-  margin-bottom: 10px;
+/* SECTIONS */
+
+.section {
+  padding: 100px 10%;
+  text-align: center;
 }
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ff003c;
+}
+
+.section.dark {
+  background: #111;
+}
+
+/* SKILLS */
+
+.skills-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress {
+  background: #222;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: #ff003c;
+  box-shadow: 0 0 10px #ff003c;
+}
+
+/* CARDS */
 
 .cards {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .card {
-  background: #1c1c1c;
-  padding: 20px;
-  border-left: 4px solid #ff1e1e;
+  background: #1a1a1a;
+  padding: 30px;
+  width: 280px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #ff003c80;
 }
 
-img {
-  max-width: 100%;
+.card h3 {
+  color: #ff003c;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+  .nav-links{
+    display:none;
+  }
+  .hero h1{
+    font-size:2.5rem;
+  }
 }
