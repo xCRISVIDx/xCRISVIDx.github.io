@@ -2,7 +2,7 @@
 
 <div>
 
-<img align="right" width="400" alt="Shimarin" src=" https://i.redd.it/e4n34ju1tryd1.jpeg"/>
+<img align="right" width="400" alt="Shimarin" src="[ https://i.redd.it/e4n34ju1tryd1.jpeg](https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2023/09/Dragon-Ball-Por-que-nerfearon-tanto-a-Gohan.jpg)"/>
 
 <h2> / about me /</h2>
   
