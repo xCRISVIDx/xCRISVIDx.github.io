@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-  <nav class="navbar">
+  <nav class="navbar container">
     <div class="logo">CRISVID</div>
-
     <ul class="nav-links">
-      <li><a href="#about">Acerca de mí</a></li>
+      <li><a href="#about">Acerca</a></li>
       <li><a href="#skills">Habilidades</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#evidencias">Evidencias</a></li>
@@ -23,125 +23,120 @@
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="overlay"></div>
-  <div class="hero-content">
+  <div class="hero-content container">
     <h1>Cristian Vargas</h1>
     <p>Ingeniero de Sistemas • Desarrollo Web • Creatividad</p>
     <a href="#projects" class="btn">Ver mi trabajo</a>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="section">
-  <h2>Acerca de mí</h2>
+  <div class="container">
+    <h2>Acerca de mí</h2>
 
-  <div class="about-container">
+    <div class="about-container">
+      <div class="about-images">
+        <img src="assets/foto1.jpg" alt="Cristian 1">
+        <img src="assets/foto2.jpg" alt="Cristian 2">
+      </div>
 
-    <div class="about-images">
-      <img src="assets/foto1.jpg" alt="Cristian 1">
-      <img src="assets/foto2.jpg" alt="Cristian 2">
-    </div>
+      <div class="about-text">
+        <p>
+          Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo web,
+          el diseño moderno y la creación de experiencias digitales impactantes.
+          Mi objetivo es convertirme en un profesional integral que combine
+          conocimiento técnico con impacto social.
+        </p>
 
-    <div class="about-text">
-      <p>
-        Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo web,
-        el diseño moderno y la creación de experiencias digitales impactantes.
-        Mi objetivo es convertirme en un profesional integral que combine
-        conocimiento técnico con impacto social.
-      </p>
-
-      <div class="about-tech">
-        <i class="ri-html5-fill"></i>
-        <i class="ri-css3-fill"></i>
-        <i class="ri-javascript-fill"></i>
-        <i class="ri-java-fill"></i>
-        <i class="ri-reactjs-line"></i>
+        <div class="about-tech">
+          <i class="ri-html5-fill"></i>
+          <i class="ri-css3-fill"></i>
+          <i class="ri-javascript-fill"></i>
+          <i class="ri-java-fill"></i>
+          <i class="ri-reactjs-line"></i>
+        </div>
       </div>
     </div>
 
-  </div>
-
-  <div class="about-video">
-    <iframe 
-      src="https://www.youtube.com/embed/7MDMFdGbeZE"
-      title="Presentación Cristian Vargas"
-      allowfullscreen>
-    </iframe>
+    <div class="about-video">
+      <iframe 
+        src="https://www.youtube.com/embed/7MDMFdGbeZE"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills" class="section dark">
-  <h2>Habilidades</h2>
+  <div class="container">
+    <h2>Habilidades</h2>
 
-  <div class="skills-container">
-    <div class="skill">
-      <span>Java</span>
-      <div class="progress"><div style="width:90%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>HTML</span>
-      <div class="progress"><div style="width:85%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>CSS</span>
-      <div class="progress"><div style="width:75%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>JavaScript</span>
-      <div class="progress"><div style="width:70%"></div></div>
+    <div class="skills-container">
+      <div class="skill">
+        <span>Java</span>
+        <div class="progress"><div style="width:90%"></div></div>
+      </div>
+      <div class="skill">
+        <span>HTML</span>
+        <div class="progress"><div style="width:85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>CSS</span>
+        <div class="progress"><div style="width:75%"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress"><div style="width:70%"></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects" class="section">
-  <h2>Proyectos</h2>
+  <div class="container">
+    <h2>Proyectos</h2>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Proyecto 1</h3>
-      <p>Aplicación web moderna con diseño atractivo.</p>
-      <a href="#">Ver proyecto</a>
-    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Proyecto 1</h3>
+        <p>Aplicación web moderna con diseño atractivo.</p>
+      </div>
 
-    <div class="card">
-      <h3>Proyecto 2</h3>
-      <p>Landing page dinámica con animaciones.</p>
-      <a href="#">Ver proyecto</a>
-    </div>
+      <div class="card">
+        <h3>Proyecto 2</h3>
+        <p>Landing page dinámica con animaciones.</p>
+      </div>
 
-    <div class="card">
-      <h3>Proyecto 3</h3>
-      <p>Sistema web completo con backend integrado.</p>
-      <a href="#">Ver proyecto</a>
+      <div class="card">
+        <h3>Proyecto 3</h3>
+        <p>Sistema web completo con backend integrado.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EVIDENCIAS -->
 <section id="evidencias" class="section dark">
-  <h2>Evidencias</h2>
+  <div class="container">
+    <h2>Evidencias</h2>
 
-  <div class="evidencias-grid">
-    <div class="evidencia-card">Modelado</div>
-    <div class="evidencia-card">Normalización</div>
-    <div class="evidencia-card">SQL</div>
-    <div class="evidencia-card">Proyecto</div>
+    <div class="cards">
+      <div class="card small">Modelado</div>
+      <div class="card small">Normalización</div>
+      <div class="card small">SQL</div>
+      <div class="card small">Proyecto</div>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="section">
-  <h2>Contacto</h2>
-  <div class="contact-box">
-    <p>Email: crisvid00@gmail.com</p>
-    <p>GitHub: github.com/xCRISVIDx</p>
+  <div class="container">
+    <h2>Contacto</h2>
+    <div class="contact-box">
+      <p>Email: crisvid00@gmail.com</p>
+      <p>GitHub: github.com/xCRISVIDx</p>
+    </div>
   </div>
 </section>
 
