@@ -146,10 +146,12 @@ header {
 
 .about-text {
   max-width: 500px;
+  margin: 0 auto;   /* 🔴 esto lo centra correctamente */
   line-height: 1.7;
   color: #ccc;
   text-align: center;
 }
+
 
 .about-tech {
   margin-top: 20px;
