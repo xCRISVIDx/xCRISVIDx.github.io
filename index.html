@@ -4,23 +4,17 @@
   <meta charset="UTF-8">
   <title>Cristian Vargas | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <header>
-  <nav class="container navbar">
+  <nav class="navbar">
     <div class="logo">CRISVID</div>
 
     <ul class="nav-links">
-      <li><a href="#about">Acerca</a></li>
+      <li><a href="#about">Acerca de mí</a></li>
       <li><a href="#skills">Habilidades</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#evidencias">Evidencias</a></li>
@@ -29,167 +23,132 @@
   </nav>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <section class="hero">
   <div class="overlay"></div>
-  <div class="hero-content container">
+  <div class="hero-content">
     <h1>Cristian Vargas</h1>
     <p>Ingeniero de Sistemas • Desarrollo Web • Creatividad</p>
-    <a href="#projects" class="btn-primary">Ver Proyectos</a>
+    <a href="#projects" class="btn">Ver mi trabajo</a>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 <section id="about" class="section">
-  <div class="container">
+  <h2>Acerca de mí</h2>
 
-    <div class="section-header">
-      <h2>Acerca de mí</h2>
-      <div class="underline"></div>
+  <div class="about-container">
+
+    <div class="about-images">
+      <img src="assets/foto1.jpg" alt="Cristian 1">
+      <img src="assets/foto2.jpg" alt="Cristian 2">
     </div>
 
-    <div class="about-grid">
+    <div class="about-text">
+      <p>
+        Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo web,
+        el diseño moderno y la creación de experiencias digitales impactantes.
+        Mi objetivo es convertirme en un profesional integral que combine
+        conocimiento técnico con impacto social.
+      </p>
 
-      <div class="about-images">
-        <img src="assets/foto1.jpg" alt="Cristian 1">
-        <img src="assets/foto2.jpg" alt="Cristian 2">
-      </div>
-
-      <div class="about-text">
-        <p>
-          Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo web,
-          el diseño moderno y la creación de experiencias digitales impactantes.
-          Mi objetivo es convertirme en un profesional integral que combine
-          conocimiento técnico con impacto social.
-        </p>
-
-        <div class="about-tech">
-          <i class="ri-html5-fill"></i>
-          <i class="ri-css3-fill"></i>
-          <i class="ri-javascript-fill"></i>
-          <i class="ri-java-fill"></i>
-          <i class="ri-reactjs-line"></i>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="about-video">
-      <iframe 
-        src="https://www.youtube.com/embed/7MDMFdGbeZE"
-        title="Presentación Cristian Vargas"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="section section-dark">
-  <div class="container">
-
-    <div class="section-header">
-      <h2>Habilidades</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <span>Java</span>
-        <div class="progress-bar"><div style="width:90%"></div></div>
-      </div>
-
-      <div class="skill-card">
-        <span>HTML</span>
-        <div class="progress-bar"><div style="width:85%"></div></div>
-      </div>
-
-      <div class="skill-card">
-        <span>CSS</span>
-        <div class="progress-bar"><div style="width:75%"></div></div>
-      </div>
-
-      <div class="skill-card">
-        <span>JavaScript</span>
-        <div class="progress-bar"><div style="width:70%"></div></div>
+      <div class="about-tech">
+        <i class="ri-html5-fill"></i>
+        <i class="ri-css3-fill"></i>
+        <i class="ri-javascript-fill"></i>
+        <i class="ri-java-fill"></i>
+        <i class="ri-reactjs-line"></i>
       </div>
     </div>
 
   </div>
+
+  <div class="about-video">
+    <iframe 
+      src="https://www.youtube.com/embed/7MDMFdGbeZE"
+      title="Presentación Cristian Vargas"
+      allowfullscreen>
+    </iframe>
+  </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+  <h2>Habilidades</h2>
+
+  <div class="skills-container">
+    <div class="skill">
+      <span>Java</span>
+      <div class="progress"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>HTML</span>
+      <div class="progress"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>CSS</span>
+      <div class="progress"><div style="width:75%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress"><div style="width:70%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects" class="section">
-  <div class="container">
+  <h2>Proyectos</h2>
 
-    <div class="section-header">
-      <h2>Proyectos</h2>
-      <div class="underline"></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Proyecto 1</h3>
+      <p>Aplicación web moderna con diseño atractivo.</p>
+      <a href="#">Ver proyecto</a>
     </div>
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Proyecto 1</h3>
-        <p>Aplicación web moderna con diseño profesional.</p>
-        <a href="#" class="btn-outline">Ver proyecto</a>
-      </div>
-
-      <div class="card">
-        <h3>Proyecto 2</h3>
-        <p>Landing page dinámica con animaciones suaves.</p>
-        <a href="#" class="btn-outline">Ver proyecto</a>
-      </div>
-
-      <div class="card">
-        <h3>Proyecto 3</h3>
-        <p>Sistema web completo con backend integrado.</p>
-        <a href="#" class="btn-outline">Ver proyecto</a>
-      </div>
+    <div class="card">
+      <h3>Proyecto 2</h3>
+      <p>Landing page dinámica con animaciones.</p>
+      <a href="#">Ver proyecto</a>
     </div>
 
+    <div class="card">
+      <h3>Proyecto 3</h3>
+      <p>Sistema web completo con backend integrado.</p>
+      <a href="#">Ver proyecto</a>
+    </div>
   </div>
 </section>
 
-<!-- ================= EVIDENCIAS ================= -->
-<section id="evidencias" class="section section-dark">
-  <div class="container">
+<!-- EVIDENCIAS -->
+<section id="evidencias" class="section dark">
+  <h2>Evidencias</h2>
 
-    <div class="section-header">
-      <h2>Evidencias</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="card-grid">
-      <div class="card small">Modelado</div>
-      <div class="card small">Normalización</div>
-      <div class="card small">SQL</div>
-      <div class="card small">Proyecto</div>
-    </div>
-
+  <div class="evidencias-grid">
+    <div class="evidencia-card">Modelado</div>
+    <div class="evidencia-card">Normalización</div>
+    <div class="evidencia-card">SQL</div>
+    <div class="evidencia-card">Proyecto</div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 <section id="contact" class="section">
-  <div class="container">
-
-    <div class="section-header">
-      <h2>Contacto</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div class="contact-box">
-      <p><strong>Email:</strong> crisvid00@gmail.com</p>
-      <p><strong>GitHub:</strong> github.com/xCRISVIDx</p>
-    </div>
-
+  <h2>Contacto</h2>
+  <div class="contact-box">
+    <p>Email: crisvid00@gmail.com</p>
+    <p>GitHub: github.com/xCRISVIDx</p>
   </div>
 </section>
 
 <footer>
-  © 2026 Cristian Vargas — Todos los derechos reservados
+  © 2026 Cristian Vargas - Todos los derechos reservados
 </footer>
 
 </body>
 </html>
+
