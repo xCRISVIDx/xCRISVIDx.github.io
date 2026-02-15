@@ -121,13 +121,15 @@ header {
 /* ABOUT */
 
 .about-container {
-  display: flex;
-  justify-content: center;
+   display: flex;
+  justify-content: center; /* centra horizontal */
   align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
+  flex-direction: column;  /* lo pone en columna ya que no hay imágenes */
+  text-align: center;      /* asegura centrado interno */
 }
+
+
+
 
 .about-images {
   display: flex;
