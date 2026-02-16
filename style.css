@@ -122,10 +122,10 @@ header {
 
 .about-container {
    display: flex;
-  justify-content: center; /* centra horizontal */
+  justify-content: center; 
   align-items: center;
-  flex-direction: column;  /* lo pone en columna ya que no hay imágenes */
-  text-align: center;      /* asegura centrado interno */
+  flex-direction: column;  
+  text-align: center;      
 }
 
 
@@ -146,7 +146,7 @@ header {
 
 .about-text {
   max-width: 500px;
-  margin: 0 auto;   /* 🔴 esto lo centra correctamente */
+  margin: 0 auto;   
   line-height: 1.7;
   color: #ccc;
   text-align: center;
