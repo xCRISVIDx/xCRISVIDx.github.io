@@ -2,22 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Cristian Vargas | Portfolio</title>
+  <title>CRISVID | Portfolio Ingeniería de Sistemas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
-
 <body>
 
 <header>
   <nav class="navbar container">
     <div class="logo">CRISVID</div>
     <ul class="nav-links">
-      <li><a href="#about">Acerca</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#about">Perfil</a></li>
       <li><a href="#evidencias">Evidencias</a></li>
+      <li><a href="#projects">Proyectos</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
   </nav>
@@ -27,129 +25,106 @@
   <div class="overlay"></div>
   <div class="hero-content container">
     <h1>Cristian Vargas</h1>
-    <p>Ingeniero de Sistemas • Desarrollo Web • Creatividad</p>
-    <a href="#projects" class="btn">Ver mi trabajo</a>
+    <p>Ingeniero de Sistemas • Especialista en Bases de Datos y Backend</p>
+    <a href="#evidencias" class="btn">Ver Evidencias del Semestre</a>
   </div>
 </section>
 
 <section id="about" class="section">
   <div class="container">
-    <h2>Acerca de mí</h2>
-
+    <h2>Perfil Profesional</h2>
     <div class="about-text">
       <p>
-        Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo web,
-        el diseño moderno y la creación de experiencias digitales impactantes.
-        Mi objetivo es convertirme en un profesional integral que combine
-        conocimiento técnico con impacto social.
+        Estudiante de tercer semestre de Ingeniería de Sistemas en la Universidad El Bosque. 
+        Enfocado en el diseño de arquitecturas de datos robustas y desarrollo de software escalable bajo los estándares del Ing. Duarte.
       </p>
-
       <div class="about-tech">
-        <i class="ri-html5-fill"></i>
-        <i class="ri-css3-fill"></i>
-        <i class="ri-javascript-fill"></i>
         <i class="ri-java-fill"></i>
-        <i class="ri-reactjs-line"></i>
+        <i class="ri-database-2-fill"></i>
+        <i class="ri-code-s-slash-line"></i>
+        <i class="ri-terminal-window-line"></i>
       </div>
     </div>
-
-    <div class="about-video">
-      <iframe 
-        src="https://www.youtube.com/embed/HfdmK5Nsd3s"
-        allowfullscreen>
-      </iframe>
-    </div>
-
   </div>
 </section>
 
-
-<section id="skills" class="section dark">
+<!-- SECCIÓN DE EVIDENCIAS TÉCNICAS -->
+<section id="evidencias" class="section dark">
   <div class="container">
-    <h2>Habilidades</h2>
+    <h2>Evidencias Académicas</h2>
+    <div class="cards">
+      
+      <!-- MODELADO -->
+      <div class="card">
+        <div class="card-icon"><i class="ri-layout-6-line"></i></div>
+        <h3>Modelado</h3>
+        <p>Diseño de Diagramas Entidad-Relación (MERE) siguiendo lógica de negocio compleja.</p>
+        <a href="Evidencias/Modelado/" class="btn-small">Explorar Archivos</a>
+      </div>
 
-    <div class="skills-container">
-      <div class="skill">
-        <span>Java</span>
-        <div class="progress"><div style="width:90%"></div></div>
+      <!-- NORMALIZACIÓN -->
+      <div class="card">
+        <div class="card-icon"><i class="ri-filter-3-line"></i></div>
+        <h3>Normalización</h3>
+        <p>Aplicación de reglas de normalización (1FN, 2FN, 3FN) para optimizar la integridad de datos.</p>
+        <a href="evidencias/normalizacion/" class="btn-small">Ver Procesos</a>
       </div>
-      <div class="skill">
-        <span>HTML</span>
-        <div class="progress"><div style="width:85%"></div></div>
+
+      <!-- SQL -->
+      <div class="card">
+        <div class="card-icon"><i class="ri-terminal-box-line"></i></div>
+        <h3>SQL</h3>
+        <p>Scripts DDL y DML desarrollados en Oracle SQL Developer para la creación y gestión de objetos.</p>
+        <a href="evidencias/sql/" class="btn-small">Ver Scripts</a>
       </div>
-      <div class="skill">
-        <span>CSS</span>
-        <div class="progress"><div style="width:75%"></div></div>
+
+      <!-- PROYECTO -->
+      <div class="card">
+        <div class="card-icon"><i class="ri-folder-shield-2-line"></i></div>
+        <h3>Proyecto Final</h3>
+        <p>Integración total del sistema de gestión de gimnasio: del modelo a la base de datos operativa.</p>
+        <a href="evidencias/proyecto/" class="btn-small">Documentación Final</a>
       </div>
-      <div class="skill">
-        <span>JavaScript</span>
-        <div class="progress"><div style="width:70%"></div></div>
-      </div>
+
     </div>
   </div>
 </section>
 
 <section id="projects" class="section">
   <div class="container">
-    <h2>Proyectos</h2>
-
+    <h2>Desarrollo y Algoritmos</h2>
     <div class="cards">
       <div class="card">
-        <h3>Proyecto 1</h3>
-        <p></p>
+        <div class="card-icon"><i class="ri-java-line"></i></div>
+        <h3>Backend Java</h3>
+        <p>Implementación de lógica de negocio y persistencia de datos utilizando Java.</p>
+        <div class="tags"><span>Java</span> <span>POO</span></div>
       </div>
-
       <div class="card">
-        <h3>Proyecto 2</h3>
-        <p></p>
-      </div>
-
-      <div class="card">
-        <h3>Proyecto 3</h3>
-        <p></p>
+        <div class="card-icon"><i class="ri-functions-line"></i></div>
+        <h3>Complejidad Algorítmica</h3>
+        <p>Análisis de eficiencia de código mediante el conteo granular de operaciones y Big O.</p>
+        <div class="tags"><span>Algoritmos</span> <span>Big O</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="evidencias" class="section dark">
-  <div class="container">
-    <h2>Evidencias</h2>
-
-    <div class="cards">
-      <div class="card small">
-        <a href="evidencias/Modelado/" target="_blank">Modelado</a>
-      </div>
-
-      <div class="card small">
-        <a href="evidencias/normalizacion/" target="_blank">Normalización</a>
-      </div>
-
-      <div class="card small">
-        <a href="evidencias/sql/" target="_blank">SQL</a>
-      </div>
-
-      <div class="card small">
-        <a href="evidencias/proyecto/" target="_blank">Proyecto</a>
-      </div>
-    </div>
-  </div>
-</section>
-  
-
-<section id="contact" class="section">
+<section id="contact" class="section dark">
   <div class="container">
     <h2>Contacto</h2>
     <div class="contact-box">
-      <p>Email: crisvid00@gmail.com</p>
+      <a href="mailto:crisvid00@gmail.com" class="logo">crisvid00@gmail.com</a>
+      <div class="about-tech" style="margin-top: 30px;">
+        <a href="https://github.com/xCRISVIDx"><i class="ri-github-fill"></i></a>
+      </div>
     </div>
   </div>
 </section>
 
 <footer>
-  © 2026 Cristian Vargas - Todos los derechos reservados
+  © 2026 Cristian Vargas - Ingeniería de Sistemas UEB
 </footer>
 
 </body>
 </html>
-
