@@ -302,4 +302,3 @@ header { position: fixed; width: 100%; background: rgba(0,0,0,0.95); backdrop-fi
 .tags span { background: #000; padding: 3px 8px; font-size: 0.7rem; border-radius: 3px; color: var(--primary); border: 1px solid var(--primary); }
 
 footer { padding: 30px; background: #000; text-align: center; color: #444; font-size: 0.8rem; }
-
