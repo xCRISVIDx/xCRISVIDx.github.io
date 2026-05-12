@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>CRISVID | Portfolio Ingeniería de Sistemas</title>
+  <title>CRISVID | Ingeniería de Sistemas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
@@ -25,8 +25,8 @@
   <div class="overlay"></div>
   <div class="hero-content container">
     <h1>Cristian Vargas</h1>
-    <p>Ingeniero de Sistemas • Especialista en Bases de Datos y Backend</p>
-    <a href="#evidencias" class="btn">Ver Evidencias del Semestre</a>
+    <p>Ingeniero de Sistemas • Backend & Bases de Datos</p>
+    <a href="#evidencias" class="btn">Explorar Evidencias</a>
   </div>
 </section>
 
@@ -36,7 +36,7 @@
     <div class="about-text">
       <p>
         Estudiante de tercer semestre de Ingeniería de Sistemas en la Universidad El Bosque. 
-        Enfocado en el diseño de arquitecturas de datos robustas y desarrollo de software escalable bajo los estándares del Ing. Duarte.
+        Especializado en el diseño de arquitecturas de datos y optimización de algoritmos bajo estándares de alta exigencia.
       </p>
       <div class="about-tech">
         <i class="ri-java-fill"></i>
@@ -48,42 +48,51 @@
   </div>
 </section>
 
-<!-- SECCIÓN DE EVIDENCIAS TÉCNICAS -->
+<!-- SECCIÓN DE EVIDENCIAS TÉCNICAS REESTRUCTURADA -->
 <section id="evidencias" class="section dark">
   <div class="container">
-    <h2>Evidencias Académicas</h2>
-    <div class="cards">
+    <h2>Evidencias del Semestre</h2>
+    <p style="color: #888; margin-bottom: 40px;">Documentación técnica de procesos de ingeniería.</p>
+    
+    <div class="evidence-grid">
       
-      <!-- MODELADO -->
-      <div class="card">
-        <div class="card-icon"><i class="ri-layout-6-line"></i></div>
-        <h3>Modelado</h3>
-        <p>Diseño de Diagramas Entidad-Relación (MERE) siguiendo lógica de negocio compleja.</p>
-        <a href="Evidencias/Modelado/Ejercicio_Hospital.drawio.png" class="btn-small">Explorar Archivos</a>
+      <!-- EVIDENCIA 1: MODELADO HOSPITAL -->
+      <div class="evidence-item">
+        <div class="evidence-img">
+            <img src="Evidencias/Modelado/Ejercicio_Hospital.drawio.png" alt="Modelo Hospital">
+        </div>
+        <div class="evidence-info">
+          <span>Modelado</span>
+          <h3>Sistema Hospitalario</h3>
+          <p>Diagrama MERE detallando entidades y relaciones lógicas.</p>
+          <a href="Evidencias/Modelado/Ejercicio_Hospital.drawio.png" target="_blank" class="btn-small">Ver Imagen</a>
+        </div>
       </div>
 
-      <!-- NORMALIZACIÓN -->
-      <div class="card">
-        <div class="card-icon"><i class="ri-filter-3-line"></i></div>
-        <h3>Normalización</h3>
-        <p>Aplicación de reglas de normalización (1FN, 2FN, 3FN) para optimizar la integridad de datos.</p>
-        <a href="evidencias/normalizacion/" class="btn-small">Ver Procesos</a>
+      <!-- EVIDENCIA 2: PROYECTO GIMNASIO (Ejemplo para cuando lo subas) -->
+      <div class="evidence-item">
+        <div class="evidence-img">
+            <img src="assets/Gohan_Estudiando.gif" alt="Proyecto Gym"> <!-- Cambia por imagen real cuando la tengas -->
+        </div>
+        <div class="evidence-info">
+          <span>Proyecto Final</span>
+          <h3>Gestión de Gimnasio</h3>
+          <p>Diseño de base de datos relacional normalizada a 3FN.</p>
+          <a href="evidencias/proyecto/" class="btn-small">Documentación</a>
+        </div>
       </div>
 
-      <!-- SQL -->
-      <div class="card">
-        <div class="card-icon"><i class="ri-terminal-box-line"></i></div>
-        <h3>SQL</h3>
-        <p>Scripts DDL y DML desarrollados en Oracle SQL Developer para la creación y gestión de objetos.</p>
-        <a href="evidencias/sql/" class="btn-small">Ver Scripts</a>
-      </div>
-
-      <!-- PROYECTO -->
-      <div class="card">
-        <div class="card-icon"><i class="ri-folder-shield-2-line"></i></div>
-        <h3>Proyecto Final</h3>
-        <p>Integración total del sistema de gestión de gimnasio: del modelo a la base de datos operativa.</p>
-        <a href="evidencias/proyecto/" class="btn-small">Documentación Final</a>
+      <!-- EVIDENCIA 3: SQL -->
+      <div class="evidence-item">
+        <div class="evidence-img">
+            <div class="placeholder-icon"><i class="ri-terminal-box-line"></i></div>
+        </div>
+        <div class="evidence-info">
+          <span>SQL</span>
+          <h3>Scripts Oracle</h3>
+          <p>Implementación de DDL y DML para objetos de base de datos.</p>
+          <a href="evidencias/sql/" class="btn-small">Ver Scripts</a>
+        </div>
       </div>
 
     </div>
@@ -92,19 +101,19 @@
 
 <section id="projects" class="section">
   <div class="container">
-    <h2>Desarrollo y Algoritmos</h2>
+    <h2>Algoritmos y Desarrollo</h2>
     <div class="cards">
       <div class="card">
         <div class="card-icon"><i class="ri-java-line"></i></div>
         <h3>Backend Java</h3>
-        <p>Implementación de lógica de negocio y persistencia de datos utilizando Java.</p>
+        <p>Lógica de negocio y persistencia de datos robusta.</p>
         <div class="tags"><span>Java</span> <span>POO</span></div>
       </div>
       <div class="card">
         <div class="card-icon"><i class="ri-functions-line"></i></div>
-        <h3>Complejidad Algorítmica</h3>
-        <p>Análisis de eficiencia de código mediante el conteo granular de operaciones y Big O.</p>
-        <div class="tags"><span>Algoritmos</span> <span>Big O</span></div>
+        <h3>Análisis Big O</h3>
+        <p>Conteo granular de operaciones para eficiencia algorítmica.</p>
+        <div class="tags"><span>Algoritmos</span> <span>Complejidad</span></div>
       </div>
     </div>
   </div>
