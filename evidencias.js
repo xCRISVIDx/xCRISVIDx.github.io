@@ -32,6 +32,13 @@ const EVIDENCIAS = {
       descripcion: "Diagrama entidad-relación para gestión de pacientes, médicos y citas."
     },
 
+     {
+      img: "Evidencias/Modelado/Ejercicio1_Taller _MER.drawio.png",
+      titulo: "Pedidos",
+      tag: "MERE · Nivel 1",
+      descripcion: "Diagrama entidad-relación para gestión de Pedidos."
+    },
+
     // 📌 PLANTILLA — copia este bloque, descomenta y rellena:
     // {
     //   img: "evidencias/modelado/NOMBRE_DEL_ARCHIVO.png",
