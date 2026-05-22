@@ -4,17 +4,19 @@
  * ============================================================
  *  👉 AQUÍ AGREGAS TUS EVIDENCIAS.
  *
- *  📁 TUS CARPETAS EN GITHUB (respeta mayúsculas exactas):
+ *  📁 TUS CARPETAS EN GITHUB (mayúsculas exactas):
  *     Evidencias/Modelado/
  *     Evidencias/Normalizacion/
  *     Evidencias/SQL/
  *     Evidencias/Proyecto/
  *
- *  ✅ PASOS:
- *  1. Sube tu imagen a la carpeta en GitHub
- *  2. Copia el nombre EXACTO del archivo (con mayúsculas/minúsculas)
- *  3. Agrega el objeto en el array de abajo
- *  4. Commit & push
+ *  ✅ PARA IMÁGENES (PNG, JPG):
+ *     { img: "Evidencias/Modelado/archivo.png", titulo: "...", tag: "...", descripcion: "..." }
+ *
+ *  ✅ PARA PDFs — usa "pdf" en lugar de "img":
+ *     { pdf: "Evidencias/Modelado/archivo.pdf", titulo: "...", tag: "...", descripcion: "..." }
+ *
+ *  ⚠️  Si el nombre tiene espacios, usa %20. Ej: "mi archivo.pdf" → "mi%20archivo.pdf"
  * ============================================================
  */
  
@@ -35,127 +37,114 @@ const EVIDENCIAS = {
       descripcion: "Diagrama entidad-relación para gestión de pedidos."
     },
  
-    // 📌 PLANTILLA — copia y pega para agregar más:
-    // {
-    //   img: "Evidencias/Modelado/NOMBRE_EXACTO.png",
-    //   titulo: "Nombre del ejercicio",
-    //   tag: "MERE · Ejercicio X",
-    //   descripcion: "Descripción corta."
-    // },
+    // 📌 PLANTILLA IMAGEN:
+    // { img: "Evidencias/Modelado/NOMBRE.png", titulo: "...", tag: "MERE · Ejercicio X", descripcion: "..." },
+ 
+    // 📌 PLANTILLA PDF:
+    // { pdf: "Evidencias/Modelado/NOMBRE.pdf", titulo: "...", tag: "MERE · Ejercicio X", descripcion: "..." },
   ],
  
   /* ---- NORMALIZACIÓN ---- */
   normalizacion: [
-    // {
-    //   img: "Evidencias/Normalizacion/NOMBRE_EXACTO.png",
-    //   titulo: "Normalización Ejercicio X",
-    //   tag: "1FN · 2FN · 3FN",
-    //   descripcion: "Descomposición hasta tercera forma normal."
-    // },
+    // { img: "Evidencias/Normalizacion/NOMBRE.png", titulo: "...", tag: "1FN · 2FN · 3FN", descripcion: "..." },
+    // { pdf: "Evidencias/Normalizacion/NOMBRE.pdf", titulo: "...", tag: "1FN · 2FN · 3FN", descripcion: "..." },
   ],
  
   /* ---- SQL / ORACLE ---- */
   sql: [
-    // {
-    //   img: "Evidencias/SQL/NOMBRE_EXACTO.png",
-    //   titulo: "Script DDL — Tabla X",
-    //   tag: "Oracle · DDL",
-    //   descripcion: "Descripción del script."
-    // },
+    // { img: "Evidencias/SQL/NOMBRE.png", titulo: "...", tag: "Oracle · DDL", descripcion: "..." },
+    // { pdf: "Evidencias/SQL/NOMBRE.pdf", titulo: "...", tag: "Oracle · DML", descripcion: "..." },
   ],
  
   /* ---- PROYECTO FINAL ---- */
   proyecto: [
-    // {
-    //   img: "Evidencias/Proyecto/NOMBRE_EXACTO.png",
-    //   titulo: "Modelo — Gimnasio",
-    //   tag: "Proyecto Final",
-    //   descripcion: "Descripción de la evidencia."
-    // },
+    // { img: "Evidencias/Proyecto/NOMBRE.png", titulo: "...", tag: "Proyecto Final", descripcion: "..." },
+    // { pdf: "Evidencias/Proyecto/NOMBRE.pdf", titulo: "...", tag: "Proyecto Final", descripcion: "..." },
   ]
  
 };
  
 /* ============================================================
-   NO MODIFIQUES NADA DEBAJO DE ESTA LÍNEA
+   NO TOQUES NADA DEBAJO DE ESTA LÍNEA
    ============================================================ */
  
 function renderGallery(seccion) {
-  const data = EVIDENCIAS[seccion] || [];
-  const gallery = document.getElementById('gallery-' + seccion);
-  const empty   = document.getElementById('empty-' + seccion);
- 
+  var data    = EVIDENCIAS[seccion] || [];
+  var gallery = document.getElementById('gallery-' + seccion);
+  var empty   = document.getElementById('empty-' + seccion);
   if (!gallery) return;
- 
-  if (data.length === 0) {
-    if (empty) empty.classList.add('show');
-    return;
-  }
+  if (data.length === 0) { if (empty) empty.classList.add('show'); return; }
  
   gallery.innerHTML = data.map(function(ev, i) {
-    return '<div class="ev-card" data-section="' + seccion + '" data-index="' + i + '" onclick="openLightbox(\'' + seccion + '\',' + i + ')">' +
+    var esPDF = ev.pdf || (ev.img && ev.img.toLowerCase().endsWith('.pdf'));
+ 
+    if (esPDF) {
+      var ruta = ev.pdf || ev.img;
+      return '<div class="ev-card ev-card-pdf">' +
+        '<div class="ev-thumb ev-thumb-pdf">' +
+          '<i class="ri-file-pdf-2-line"></i>' +
+          '<span>' + ev.titulo + '</span>' +
+        '</div>' +
+        '<div class="ev-info">' +
+          '<div class="ev-info-tag">' + ev.tag + '</div>' +
+          '<h4>' + ev.titulo + '</h4>' +
+          '<p>' + ev.descripcion + '</p>' +
+          '<a href="' + ruta + '" target="_blank" class="ev-pdf-btn">' +
+            '<i class="ri-external-link-line"></i> Ver PDF' +
+          '</a>' +
+        '</div></div>';
+    }
+ 
+    return '<div class="ev-card" onclick="openLightbox(\'' + seccion + '\',' + i + ')">' +
       '<div class="ev-thumb">' +
         '<img src="' + ev.img + '" alt="' + ev.titulo + '" loading="lazy" ' +
-             'onerror="this.parentElement.innerHTML=\'<div class=ev-thumb-placeholder><i class=ri-image-2-line></i><span>Imagen no encontrada</span></div>\'">' +
+             'onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<div class=ev-thumb-placeholder><i class=ri-image-2-line></i><span>Imagen no encontrada</span></div>\'">' +
         '<div class="ev-zoom"><i class="ri-zoom-in-line"></i></div>' +
       '</div>' +
       '<div class="ev-info">' +
         '<div class="ev-info-tag">' + ev.tag + '</div>' +
         '<h4>' + ev.titulo + '</h4>' +
         '<p>' + ev.descripcion + '</p>' +
-      '</div>' +
-    '</div>';
+      '</div></div>';
   }).join('');
 }
  
-['modelado', 'normalizacion', 'sql', 'proyecto'].forEach(renderGallery);
+['modelado','normalizacion','sql','proyecto'].forEach(renderGallery);
  
-/* ---- LIGHTBOX ---- */
-var lbSection = '';
-var lbIndex   = 0;
+/* ---- LIGHTBOX (solo imágenes) ---- */
+var lbSection = '', lbIndex = 0;
  
 function openLightbox(seccion, index) {
-  lbSection = seccion;
-  lbIndex   = index;
+  lbSection = seccion; lbIndex = index;
   updateLightbox();
   document.getElementById('lightbox').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
- 
 function updateLightbox() {
-  var data = EVIDENCIAS[lbSection];
-  var ev   = data[lbIndex];
+  var ev = EVIDENCIAS[lbSection][lbIndex];
   document.getElementById('lbImg').src = ev.img;
   document.getElementById('lbTitle').textContent   = ev.titulo;
-  document.getElementById('lbCounter').textContent = (lbIndex + 1) + ' / ' + data.length;
+  document.getElementById('lbCounter').textContent = (lbIndex+1) + ' / ' + EVIDENCIAS[lbSection].length;
 }
- 
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('open');
   document.body.style.overflow = '';
 }
- 
 document.getElementById('lbClose').addEventListener('click', closeLightbox);
- 
 document.getElementById('lbPrev').addEventListener('click', function() {
-  var data = EVIDENCIAS[lbSection];
-  lbIndex = (lbIndex - 1 + data.length) % data.length;
+  lbIndex = (lbIndex - 1 + EVIDENCIAS[lbSection].length) % EVIDENCIAS[lbSection].length;
   updateLightbox();
 });
- 
 document.getElementById('lbNext').addEventListener('click', function() {
-  var data = EVIDENCIAS[lbSection];
-  lbIndex = (lbIndex + 1) % data.length;
+  lbIndex = (lbIndex + 1) % EVIDENCIAS[lbSection].length;
   updateLightbox();
 });
- 
 document.getElementById('lightbox').addEventListener('click', function(e) {
   if (e.target === document.getElementById('lightbox')) closeLightbox();
 });
- 
 document.addEventListener('keydown', function(e) {
   if (!document.getElementById('lightbox').classList.contains('open')) return;
-  if (e.key === 'Escape')      closeLightbox();
-  if (e.key === 'ArrowLeft')   document.getElementById('lbPrev').click();
-  if (e.key === 'ArrowRight')  document.getElementById('lbNext').click();
+  if (e.key === 'Escape')     closeLightbox();
+  if (e.key === 'ArrowLeft')  document.getElementById('lbPrev').click();
+  if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
 });
