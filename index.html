@@ -4,136 +4,222 @@
   <meta charset="UTF-8">
   <title>CRISVID | Ingeniería de Sistemas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<!-- NAVBAR -->
+<header id="header">
   <nav class="navbar container">
-    <div class="logo">CRISVID</div>
+    <div class="logo">CRISVID<span class="logo-dot">.</span></div>
     <ul class="nav-links">
       <li><a href="#about">Perfil</a></li>
       <li><a href="#evidencias">Evidencias</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
+    <button class="menu-btn" id="menuBtn"><i class="ri-menu-line"></i></button>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="overlay"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
   <div class="hero-content container">
-    <h1>Cristian Vargas</h1>
-    <p>Ingeniero de Sistemas • Backend & Bases de Datos</p>
-    <a href="#evidencias" class="btn">Explorar Evidencias</a>
+    <div class="hero-tag">Ingeniería de Sistemas · Universidad El Bosque</div>
+    <h1>Cristian<br><span>Vargas</span></h1>
+    <p class="hero-sub">Backend · Bases de Datos · Arquitectura de Datos</p>
+    <div class="hero-actions">
+      <a href="#evidencias" class="btn btn-primary">Ver Evidencias</a>
+      <a href="#contact" class="btn btn-outline">Contacto</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="section">
   <div class="container">
-    <h2>Perfil Profesional</h2>
-    <div class="about-text">
-      <p>
-        Estudiante de tercer semestre de Ingeniería de Sistemas en la Universidad El Bosque. 
-        Especializado en el diseño de arquitecturas de datos y optimización de algoritmos bajo estándares de alta exigencia.
-      </p>
-      <div class="about-tech">
-        <i class="ri-java-fill"></i>
-        <i class="ri-database-2-fill"></i>
-        <i class="ri-code-s-slash-line"></i>
-        <i class="ri-terminal-window-line"></i>
+    <div class="section-label">01 — Perfil</div>
+    <h2 class="section-title">Perfil <span>Profesional</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Estudiante de tercer semestre de <strong>Ingeniería de Sistemas</strong> en la Universidad El Bosque. Especializado en el diseño de arquitecturas de datos, modelado entidad-relación y optimización de algoritmos bajo estándares de alta exigencia.</p>
+        <p style="margin-top:15px;">Apasionado por construir soluciones eficientes desde las bases: buen modelo de datos, código limpio y lógica sólida.</p>
+      </div>
+      <div class="about-stack">
+        <div class="stack-item"><i class="ri-java-fill"></i><span>Java</span></div>
+        <div class="stack-item"><i class="ri-database-2-fill"></i><span>Oracle SQL</span></div>
+        <div class="stack-item"><i class="ri-code-s-slash-line"></i><span>PL/SQL</span></div>
+        <div class="stack-item"><i class="ri-git-branch-line"></i><span>Git</span></div>
+        <div class="stack-item"><i class="ri-terminal-window-line"></i><span>Algoritmos</span></div>
+        <div class="stack-item"><i class="ri-table-line"></i><span>Modelado ER</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECCIÓN DE EVIDENCIAS TÉCNICAS REESTRUCTURADA -->
+<!-- EVIDENCIAS -->
 <section id="evidencias" class="section dark">
   <div class="container">
-    <h2>Evidencias del Semestre</h2>
-    <p style="color: #888; margin-bottom: 40px;">Documentación técnica de procesos de ingeniería.</p>
-    
-    <div class="evidence-grid">
-      
-      <!-- EVIDENCIA 1: MODELADO HOSPITAL -->
-      <div class="evidence-item">
-        <div class="evidence-img">
-            <img src="Evidencias/Modelado/Ejercicio_Hospital.drawio.png" alt="Modelo Hospital">
-        </div>
-        <div class="evidence-info">
-          <span>Modelado</span>
-          <h3>Sistema Hospitalario</h3>
-          <p>Diagrama MERE detallando entidades y relaciones lógicas.</p>
-          <a href="Evidencias/Modelado/Ejercicio_Hospital.drawio.png" target="_blank" class="btn-small">Ver Imagen</a>
-        </div>
-      </div>
+    <div class="section-label">02 — Documentación Técnica</div>
+    <h2 class="section-title">Evidencias del <span>Semestre</span></h2>
+    <p class="section-sub">Haz clic en cualquier categoría para explorar las evidencias.</p>
 
-      <!-- EVIDENCIA 2: PROYECTO GIMNASIO (Ejemplo para cuando lo subas) -->
-      <div class="evidence-item">
-        <div class="evidence-img">
-            <img src="assets/Gohan_Estudiando.gif" alt="Proyecto Gym"> <!-- Cambia por imagen real cuando la tengas -->
-        </div>
-        <div class="evidence-info">
-          <span>Proyecto Final</span>
-          <h3>Gestión de Gimnasio</h3>
-          <p>Diseño de base de datos relacional normalizada a 3FN.</p>
-          <a href="evidencias/proyecto/" class="btn-small">Documentación</a>
-        </div>
-      </div>
-
-      <!-- EVIDENCIA 3: SQL -->
-      <div class="evidence-item">
-        <div class="evidence-img">
-            <div class="placeholder-icon"><i class="ri-terminal-box-line"></i></div>
-        </div>
-        <div class="evidence-info">
-          <span>SQL</span>
-          <h3>Scripts Oracle</h3>
-          <p>Implementación de DDL y DML para objetos de base de datos.</p>
-          <a href="evidencias/sql/" class="btn-small">Ver Scripts</a>
-        </div>
-      </div>
-
+    <!-- TABS -->
+    <div class="ev-tabs">
+      <button class="ev-tab active" data-tab="modelado">
+        <i class="ri-git-branch-line"></i> MERE / Modelado
+      </button>
+      <button class="ev-tab" data-tab="normalizacion">
+        <i class="ri-table-line"></i> Normalización
+      </button>
+      <button class="ev-tab" data-tab="sql">
+        <i class="ri-terminal-box-line"></i> Scripts SQL
+      </button>
+      <button class="ev-tab" data-tab="proyecto">
+        <i class="ri-folder-3-line"></i> Proyecto Final
+      </button>
     </div>
+
+    <!-- PANEL: MODELADO -->
+    <div class="ev-panel active" id="tab-modelado">
+      <div class="ev-panel-header">
+        <h3>Modelado Entidad-Relación</h3>
+        <p>Diagramas MERE que representan la estructura lógica de diferentes sistemas de información.</p>
+      </div>
+      <div class="ev-gallery" id="gallery-modelado">
+        <!-- Las tarjetas se generan desde evidencias.js -->
+      </div>
+      <div class="ev-empty" id="empty-modelado">
+        <i class="ri-image-add-line"></i>
+        <p>Próximamente — sube tus imágenes a <code>evidencias/modelado/</code></p>
+      </div>
+    </div>
+
+    <!-- PANEL: NORMALIZACIÓN -->
+    <div class="ev-panel" id="tab-normalizacion">
+      <div class="ev-panel-header">
+        <h3>Normalización de Bases de Datos</h3>
+        <p>Ejercicios de normalización hasta 3FN: identificación de dependencias funcionales y descomposición de tablas.</p>
+      </div>
+      <div class="ev-gallery" id="gallery-normalizacion"></div>
+      <div class="ev-empty" id="empty-normalizacion">
+        <i class="ri-image-add-line"></i>
+        <p>Próximamente — sube tus imágenes a <code>evidencias/normalizacion/</code></p>
+      </div>
+    </div>
+
+    <!-- PANEL: SQL -->
+    <div class="ev-panel" id="tab-sql">
+      <div class="ev-panel-header">
+        <h3>Scripts SQL / Oracle</h3>
+        <p>Implementación de DDL, DML, consultas avanzadas, procedimientos y funciones en Oracle.</p>
+      </div>
+      <div class="ev-gallery" id="gallery-sql"></div>
+      <div class="ev-empty" id="empty-sql">
+        <i class="ri-image-add-line"></i>
+        <p>Próximamente — sube tus imágenes a <code>evidencias/sql/</code></p>
+      </div>
+    </div>
+
+    <!-- PANEL: PROYECTO FINAL -->
+    <div class="ev-panel" id="tab-proyecto">
+      <div class="ev-panel-header">
+        <h3>Proyecto Final — Gestión de Gimnasio</h3>
+        <p>Diseño completo de base de datos relacional: modelo conceptual, lógico, físico y scripts de implementación.</p>
+      </div>
+      <div class="ev-gallery" id="gallery-proyecto"></div>
+      <div class="ev-empty" id="empty-proyecto">
+        <i class="ri-image-add-line"></i>
+        <p>Próximamente — sube tus imágenes a <code>evidencias/proyecto/</code></p>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose"><i class="ri-close-line"></i></button>
+  <button class="lb-prev" id="lbPrev"><i class="ri-arrow-left-s-line"></i></button>
+  <button class="lb-next" id="lbNext"><i class="ri-arrow-right-s-line"></i></button>
+  <div class="lb-content">
+    <img id="lbImg" src="" alt="">
+    <div class="lb-info">
+      <span id="lbTitle"></span>
+      <span id="lbCounter"></span>
+    </div>
+  </div>
+</div>
+
+<!-- PROYECTOS -->
 <section id="projects" class="section">
   <div class="container">
-    <h2>Algoritmos y Desarrollo</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon"><i class="ri-java-line"></i></div>
+    <div class="section-label">03 — Desarrollo</div>
+    <h2 class="section-title">Algoritmos y <span>Código</span></h2>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <div class="proj-num">01</div>
+        <i class="ri-java-line proj-icon"></i>
         <h3>Backend Java</h3>
-        <p>Lógica de negocio y persistencia de datos robusta.</p>
-        <div class="tags"><span>Java</span> <span>POO</span></div>
+        <p>Lógica de negocio orientada a objetos y persistencia de datos robusta con Java.</p>
+        <div class="tags"><span>Java</span><span>POO</span><span>Colecciones</span></div>
       </div>
-      <div class="card">
-        <div class="card-icon"><i class="ri-functions-line"></i></div>
+      <div class="proj-card">
+        <div class="proj-num">02</div>
+        <i class="ri-functions-line proj-icon"></i>
         <h3>Análisis Big O</h3>
-        <p>Conteo granular de operaciones para eficiencia algorítmica.</p>
-        <div class="tags"><span>Algoritmos</span> <span>Complejidad</span></div>
+        <p>Conteo granular de operaciones para medir eficiencia y complejidad algorítmica.</p>
+        <div class="tags"><span>Algoritmos</span><span>Big O</span><span>Recursión</span></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-num">03</div>
+        <i class="ri-database-2-line proj-icon"></i>
+        <h3>Oracle DB</h3>
+        <p>Diseño e implementación de bases de datos relacionales con Oracle y PL/SQL.</p>
+        <div class="tags"><span>Oracle</span><span>DDL</span><span>DML</span></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section dark">
   <div class="container">
-    <h2>Contacto</h2>
-    <div class="contact-box">
-      <a href="mailto:crisvid00@gmail.com" class="logo">crisvid00@gmail.com</a>
-      <div class="about-tech" style="margin-top: 30px;">
-        <a href="https://github.com/xCRISVIDx"><i class="ri-github-fill"></i></a>
+    <div class="section-label">04 — Contacto</div>
+    <h2 class="section-title">¿Hablamos <span>?</span></h2>
+    <div class="contact-wrap">
+      <a href="mailto:crisvid00@gmail.com" class="contact-email">
+        <i class="ri-mail-line"></i>
+        crisvid00@gmail.com
+      </a>
+      <div class="contact-links">
+        <a href="https://github.com/xCRISVIDx" target="_blank" class="contact-link">
+          <i class="ri-github-fill"></i>
+          <span>GitHub</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  © 2026 Cristian Vargas - Ingeniería de Sistemas UEB
+  <div class="container footer-inner">
+    <span class="logo">CRISVID<span class="logo-dot">.</span></span>
+    <span>© 2026 Cristian Vargas · Ingeniería de Sistemas UEB</span>
+  </div>
 </footer>
 
+<script src="evidencias.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
