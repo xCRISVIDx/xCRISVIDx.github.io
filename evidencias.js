@@ -26,7 +26,7 @@ const EVIDENCIAS = {
   modelado: [
     // ✅ EJEMPLO ACTIVO — reemplaza con tu ruta real
     {
-      img: "evidencias/modelado/Ejercicio_Hospital.drawio.png",
+      img: "evidencias/modelado/Ejercicio1_Taller _MER.drawio.png",
       titulo: "Sistema Hospitalario",
       tag: "MERE · Nivel 1",
       descripcion: "Diagrama entidad-relación para gestión de pacientes, médicos y citas."
