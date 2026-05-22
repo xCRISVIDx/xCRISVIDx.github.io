@@ -48,6 +48,7 @@ const EVIDENCIAS = {
   normalizacion: [
     // { img: "Evidencias/Normalizacion/NOMBRE.png", titulo: "...", tag: "1FN · 2FN · 3FN", descripcion: "..." },
     // { pdf: "Evidencias/Normalizacion/NOMBRE.pdf", titulo: "...", tag: "1FN · 2FN · 3FN", descripcion: "..." },
+   { pdf: "Evidencias/Normalizacion/Practica_Normalizacion_Pilotos1.pdf", titulo: "Ejercicio Pilotos Normalizacion", tag: "1FN · 2FN · 3FN", descripcion: "Ejercicio Basico de normalizacion " },
   ],
  
   /* ---- SQL / ORACLE ---- */
