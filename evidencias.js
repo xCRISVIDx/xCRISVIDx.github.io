@@ -87,6 +87,10 @@ const EVIDENCIAS = {
    { img: "Evidencias/sql/Consulta_Basica2_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
    { img: "Evidencias/sql/Consulta_Basica3_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
    { img: "Evidencias/sql/Consulta_Basica4_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
+    { img: "Evidencias/sql/Consulta_Basica5_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
+    { img: "Evidencias/sql/Consulta_Basica6_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
+    { img: "Evidencias/sql/Consulta_Basica7_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
+    { img: "Evidencias/sql/Consulta_Basica8_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
   ],
  
   /* ---- PROYECTO FINAL ---- */
