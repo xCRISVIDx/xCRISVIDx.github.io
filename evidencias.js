@@ -83,6 +83,7 @@ const EVIDENCIAS = {
   sql: [
     // { img: "Evidencias/SQL/NOMBRE.png", titulo: "...", tag: "Oracle · DDL", descripcion: "..." },
     // { pdf: "Evidencias/SQL/NOMBRE.pdf", titulo: "...", tag: "Oracle · DML", descripcion: "..." },
+     { img: "Evidencias/sql/Consulta_Basica1_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL, mostrar todos los empleados" },
   ],
  
   /* ---- PROYECTO FINAL ---- */
