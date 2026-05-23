@@ -38,37 +38,44 @@ const EVIDENCIAS = {
     },
 
     {
+      img: "Evidencias/Modelado/MER_University_Champions_League.drawio.png",
+      titulo: "Taller Pedidos",
+      tag: "MER · Ejercicio 3",
+      descripcion: "Diagrama entidad-relación para gestión de pedidos."
+    },
+
+    {
       img: "Evidencias/Modelado/Taller_Modelado_Avanzado_Comidas.png",
       titulo: "Taller ComidaRapida",
-      tag: "MERE · Ejercicio 3",
+      tag: "MERE · Ejercicio 4",
       descripcion: "Diagrama entidad-relación para gestión de Comida y pedidos."
     },
 
    {
       img: "Evidencias/Modelado/Residuos_Toxicos.png",
       titulo: "Taller ResiduosToxicos",
-      tag: "MERE · Ejercicio 4",
+      tag: "MERE · Ejercicio 5",
       descripcion: "Diagrama entidad-relación para gestión de Residuos Toxicos."
     },
 
    {
       img: "Evidencias/Modelado/Ejercicio_empleados.png",
       titulo: "Taller Empleados",
-      tag: "MERE · Ejercicio 5",
+      tag: "MERE · Ejercicio 6",
       descripcion: "Diagrama entidad-relación para gestión de Empleados."
     },
 
     {
       img: "Evidencias/Modelado/MER_GYM_V1.drawio.png",
       titulo: "MER Version1 Gym",
-      tag: "MER · Ejercicio 6",
+      tag: "MER · Ejercicio 7",
       descripcion: "Diagrama entidad-relación para gestión de gimnasio."
     },
 
     {
       img: "Evidencias/Modelado/MERE_GYM_V2.drawio.png",
       titulo: "MERE Version2 Gym",
-      tag: "MER · Ejercicio 7",
+      tag: "MER · Ejercicio 8",
       descripcion: "Diagrama entidad-relación-Extendido para gestión de gimnasio."
     },
     // 📌 PLANTILLA IMAGEN:
