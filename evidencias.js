@@ -66,7 +66,7 @@ const EVIDENCIAS = {
     },
 
     {
-      img: "Evidencias/Modelado/MERE_GYM_V2.drawio.png.drawio.png",
+      img: "Evidencias/Modelado/MERE_GYM_V2.drawio.png",
       titulo: "MERE Version2 Gym",
       tag: "MER · Ejercicio 7",
       descripcion: "Diagrama entidad-relación-Extendido para gestión de gimnasio."
