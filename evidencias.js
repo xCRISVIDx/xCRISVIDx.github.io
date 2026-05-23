@@ -111,6 +111,16 @@ const EVIDENCIAS = {
        { img: "Evidencias/sql/Consulta_Basica11_SQL.png", titulo: "Consulta Basica FUNCIONES SQL11", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQLcFunciones (MAX, SUM, ETC" },
        { img: "Evidencias/sql/Consulta_Basica12_SQL.png", titulo: "Consulta Basica SQL12", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL Empleados por departamento" },
        { img: "Evidencias/sql/Consulta_Basica13_SQL.png", titulo: "Consulta Basica HAVING SQL13", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL Con HAVING" },
+       { img: "Evidencias/sql/Consulta_Basica14_SQL.png", titulo: "Consulta Basica SQL9", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL Funciones de texto" },
+       { img: "Evidencias/sql/Consulta_Basica15_SQL.png", titulo: "Consulta Basica SQL10", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL Funciones de fecha" },
+       { img: "Evidencias/sql/Consulta_Basica16_SQL.png", titulo: "Consulta Basica FUNCIONES SQL11", tag: "Oracle · DDL", descripcion: "CASE para categorizar salarios" },
+       { img: "Evidencias/sql/Consulta_Basica17_SQL.png", titulo: "Consulta Basica SQL12", tag: "Oracle · DDL", descripcion: "NVL para reemplazar nulos (salario total con comisión)" },
+       { img: "Evidencias/sql/Consulta_Basica18_SQL.png", titulo: "Consulta Basica HAVING SQL13", tag: "Oracle · DDL", descripcion: " INNER JOIN básico: empleados con su departamento" },
+       { img: "Evidencias/sql/Consulta_Basica19_SQL.png", titulo: "Consulta Basica FUNCIONES SQL11", tag: "Oracle · DDL", descripcion: "JOIN triple: empleado + departamento + ubicación" },
+       { img: "Evidencias/sql/Consulta_Basica20_SQL.png", titulo: "Consulta Basica SQL12", tag: "Oracle · DDL", descripcion: "JOIN con el puesto de trabajo" },
+       { img: "Evidencias/sql/Consulta_Basica21_SQL.png", titulo: "Consulta Basica HAVING SQL13", tag: "Oracle · DDL", descripcion: "Self-JOIN: empleado con su manager" },
+       { img: "Evidencias/sql/Consulta_Basica22_SQL.png", titulo: "Consulta Basica HAVING SQL13", tag: "Oracle · DDL", descripcion: "LEFT JOIN: departamentos aunque no tengan empleados" },
+       { img: "Evidencias/sql/Consulta_Basica23_SQL.png", titulo: "Consulta Basica HAVING SQL13", tag: "Oracle · DDL", descripcion: "Subconsulta: empleados que ganan más que el promedio" },
   ],
  
   /* ---- PROYECTO FINAL ---- */
