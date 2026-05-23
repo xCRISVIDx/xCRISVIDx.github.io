@@ -27,20 +27,20 @@ const EVIDENCIAS = {
     {
       img: "Evidencias/Modelado/Ejercicio_Hospital.drawio.png",
       titulo: "Sistema Hospitalario",
-      tag: "MERE · Ejercicio 1",
+      tag: "MER · Ejercicio 1",
       descripcion: "Diagrama entidad-relación para gestión de pacientes, médicos y citas."
     },
     {
       img: "Evidencias/Modelado/Ejercicio1_Taller%20_MER.drawio.png",
       titulo: "Taller Pedidos",
-      tag: "MERE · Ejercicio 2",
+      tag: "MER · Ejercicio 2",
       descripcion: "Diagrama entidad-relación para gestión de pedidos."
     },
 
     {
       img: "Evidencias/Modelado/Taller_Modelado_Avanzado_Comidas.png",
       titulo: "Taller ComidaRapida",
-      tag: "MERE · Ejercicio 2",
+      tag: "MERE · Ejercicio 3",
       descripcion: "Diagrama entidad-relación para gestión de Comida y pedidos."
     },
  
