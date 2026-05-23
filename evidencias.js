@@ -50,7 +50,13 @@ const EVIDENCIAS = {
       tag: "MERE · Ejercicio 4",
       descripcion: "Diagrama entidad-relación para gestión de Residuos Toxicos."
     },
- 
+
+   {
+      img: "Evidencias/Modelado/Ejercicio_empleados.png",
+      titulo: "Taller Empleados",
+      tag: "MERE · Ejercicio 5",
+      descripcion: "Diagrama entidad-relación para gestión de Empleados."
+    },
     // 📌 PLANTILLA IMAGEN:
     // { img: "Evidencias/Modelado/NOMBRE.png", titulo: "...", tag: "MERE · Ejercicio X", descripcion: "..." },
  
