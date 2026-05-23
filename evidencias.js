@@ -32,14 +32,14 @@ const EVIDENCIAS = {
     },
     {
       img: "Evidencias/Modelado/Ejercicio1_Taller%20_MER.drawio.png",
-      titulo: "Taller Pedidos",
+      titulo: "Taller Pedidos/Repartidores",
       tag: "MER · Ejercicio 2",
       descripcion: "Diagrama entidad-relación para gestión de pedidos."
     },
 
     {
       img: "Evidencias/Modelado/MER_University_Champions_League.drawio.png",
-      titulo: "Taller Pedidos",
+      titulo: "Taller University Champions League",
       tag: "MER · Ejercicio 3",
       descripcion: "Diagrama entidad-relación para gestión de pedidos."
     },
