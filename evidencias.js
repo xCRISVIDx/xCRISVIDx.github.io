@@ -84,9 +84,9 @@ const EVIDENCIAS = {
     // { img: "Evidencias/SQL/NOMBRE.png", titulo: "...", tag: "Oracle · DDL", descripcion: "..." },
     // { pdf: "Evidencias/SQL/NOMBRE.pdf", titulo: "...", tag: "Oracle · DML", descripcion: "..." },
      { img: "Evidencias/sql/Consulta_Basica1_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL, mostrar todos los empleados" },
-   { img: "Evidencias/sql/Consulta_Basica2_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL, mostrar todos los empleados" },
-   { img: "Evidencias/sql/Consulta_Basica3_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL, mostrar todos los empleados" },
-   { img: "Evidencias/sql/Consulta_Basica4_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL, mostrar todos los empleados" },
+   { img: "Evidencias/sql/Consulta_Basica2_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
+   { img: "Evidencias/sql/Consulta_Basica3_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
+   { img: "Evidencias/sql/Consulta_Basica4_SQL.png", titulo: "Consulta Basica SQL", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
   ],
  
   /* ---- PROYECTO FINAL ---- */
