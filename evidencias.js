@@ -108,9 +108,9 @@ const EVIDENCIAS = {
     { img: "Evidencias/sql/Consulta_Basica8_SQL.png", titulo: "Consulta Basica SQL8", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
        { img: "Evidencias/sql/Consulta_Basica9_SQL.png", titulo: "Consulta Basica SQL9", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
        { img: "Evidencias/sql/Consulta_Basica10_SQL.png", titulo: "Consulta Basica SQL10", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
-       { img: "Evidencias/sql/Consulta_Basica11_SQL.png", titulo: "Consulta Basica SQL11", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
-       { img: "Evidencias/sql/Consulta_Basica12_SQL.png", titulo: "Consulta Basica SQL12", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
-       { img: "Evidencias/sql/Consulta_Basica13_SQL.png", titulo: "Consulta Basica SQL13", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL" },
+       { img: "Evidencias/sql/Consulta_Basica11_SQL.png", titulo: "Consulta Basica FUNCIONES SQL11", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQLcFunciones (MAX, SUM, ETC" },
+       { img: "Evidencias/sql/Consulta_Basica12_SQL.png", titulo: "Consulta Basica SQL12", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL Empleados por departamento" },
+       { img: "Evidencias/sql/Consulta_Basica13_SQL.png", titulo: "Consulta Basica HAVING SQL13", tag: "Oracle · DDL", descripcion: "Consultas basicas de SQL Con HAVING" },
   ],
  
   /* ---- PROYECTO FINAL ---- */
