@@ -36,6 +36,13 @@ const EVIDENCIAS = {
       tag: "MERE · Ejercicio 2",
       descripcion: "Diagrama entidad-relación para gestión de pedidos."
     },
+
+    {
+      img: "Evidencias/Modelado/Taller_Modelado_Avanzado_Comidas.png",
+      titulo: "Taller ComidaRapida",
+      tag: "MERE · Ejercicio 2",
+      descripcion: "Diagrama entidad-relación para gestión de Comida y pedidos."
+    },
  
     // 📌 PLANTILLA IMAGEN:
     // { img: "Evidencias/Modelado/NOMBRE.png", titulo: "...", tag: "MERE · Ejercicio X", descripcion: "..." },
