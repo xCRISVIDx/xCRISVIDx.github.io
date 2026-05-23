@@ -89,6 +89,7 @@ const EVIDENCIAS = {
   proyecto: [
     // { img: "Evidencias/Proyecto/NOMBRE.png", titulo: "...", tag: "Proyecto Final", descripcion: "..." },
     // { pdf: "Evidencias/Proyecto/NOMBRE.pdf", titulo: "...", tag: "Proyecto Final", descripcion: "..." },
+     { img: "Evidencias/proyecto/MER_GYM_V1.drawio.png", titulo: "MER V1 Proyecto GYM", tag: "Proyecto Final", descripcion: "version mas basica Mer del proyecto " },
   ]
  
 };
