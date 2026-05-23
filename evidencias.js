@@ -43,6 +43,13 @@ const EVIDENCIAS = {
       tag: "MERE · Ejercicio 3",
       descripcion: "Diagrama entidad-relación para gestión de Comida y pedidos."
     },
+
+   {
+      img: "Evidencias/Modelado/Residuos_Toxicos.png",
+      titulo: "Taller ResiduosToxicos",
+      tag: "MERE · Ejercicio 4",
+      descripcion: "Diagrama entidad-relación para gestión de Residuos Toxicos."
+    },
  
     // 📌 PLANTILLA IMAGEN:
     // { img: "Evidencias/Modelado/NOMBRE.png", titulo: "...", tag: "MERE · Ejercicio X", descripcion: "..." },
