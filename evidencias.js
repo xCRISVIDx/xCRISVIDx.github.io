@@ -92,6 +92,13 @@ const EVIDENCIAS = {
       tag: "MER · Ejercicio 10",
       descripcion: "Modelado Relacional Con Ingenieria GYM"
     },
+
+   {
+      img: "Evidencias/Modelado/MERGYM.png",
+      titulo: "MER Proyecto reducido",
+      tag: "MER · Ejercicio 11",
+      descripcion: "MER Reducido"
+    },
     // 📌 PLANTILLA IMAGEN:
     // { img: "Evidencias/Modelado/NOMBRE.png", titulo: "...", tag: "MERE · Ejercicio X", descripcion: "..." },
  
@@ -146,6 +153,7 @@ const EVIDENCIAS = {
    { img: "Evidencias/proyecto/MERE_GYM_V2.drawio.png", titulo: "MER V2 Proyecto GYM", tag: "Proyecto Final", descripcion: "version Mere del proyecto " },
    { img: "Evidencias/proyecto/Relacional.png", titulo: "Relacional", tag: "Proyecto Final", descripcion: "Version Modelado Relacional " },
    { img: "Evidencias/proyecto/Relacional_Ingenieria.png", titulo: "Relacional Ingenieria", tag: "Proyecto Final", descripcion: "Version Modelado Relacional" },
+   { img: "Evidencias/proyecto/MERGYM.png", titulo: "Mer reducido", tag: "Proyecto Final", descripcion: "Version MER Reducido" },
   ]
  
 };
