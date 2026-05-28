@@ -106,6 +106,7 @@ const EVIDENCIAS = {
    { pdf: "Evidencias/Normalizacion/Practica_Normalizacion_Pilotos1.pdf", titulo: "Ejercicio Pilotos Normalizacion", tag: "1FN · 2FN · 3FN", descripcion: "Ejercicio Basico de normalizacion " },
    { pdf: "Evidencias/Normalizacion/Ejercicio_Taller_Normalizacion.pdf", titulo: "Ejercicio en clase Estudiante", tag: "1FN · 2FN · 3FN", descripcion: "Ejercicio Basico de Estudiante" },
    { pdf: "Evidencias/Normalizacion/Practica_Normalizacion_Ventas.pdf", titulo: "Ejercicio Ventas Normalizacion", tag: "1FN · 2FN · 3FN", descripcion: "Ejercicio Basico de Normalizacionnde Ventas" },
+      { pdf: "Evidencias/Normalizacion/Normalizacion_Taller_FOOD.pdf", titulo: "Ejercicio FOOD Normalizacion", tag: "1FN · 2FN · 3FN", descripcion: "Ejercicio de Normalizacion de Comidas y clientes" },
   ],
  
   /* ---- SQL / ORACLE ---- */
